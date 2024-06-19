@@ -27,10 +27,10 @@ def train_save_model(cleaned_df, outcome_df):
     model_df = model_df[~model_df['new_child'].isna()]  
     
     # Logistic regression model
-    model = LogisticRegression()
+    model = LogisticRegression(max_iter=500)
 
     # Fit the model
-    model.fit(model_df[['age']], model_df['new_child'])
+    model.fit(model_df, model_df['new_child'])
 
     # Save the model
     joblib.dump(model, "model.joblib")
