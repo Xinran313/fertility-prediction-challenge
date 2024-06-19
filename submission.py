@@ -50,10 +50,10 @@ def clean_df(df, background_df=None):
     df = df[selected_columns]
 
     # make sure categorical variables were loaded as categories 
-    features['sted_2020'] = features['sted_2020'].astype('str')
-    features['burgstat_2020'] = features['burgstat_2020'].astype('str')
-    features['woonvorm_2020'] = features['woonvorm_2020'].astype('str')
-    features['oplcat_2020'] = features['oplcat_2020'].astype('str')
+    df['sted_2020'] = df['sted_2020'].astype('str')
+    df'burgstat_2020'] = df['burgstat_2020'].astype('str')
+    df['woonvorm_2020'] = df['woonvorm_2020'].astype('str')
+    df['oplcat_2020'] = df['oplcat_2020'].astype('str')
 
     # preprocessing - recode variables
     categorical_columns = ['sted_2020', 'burgstat_2020', 'woonvorm_2020']
