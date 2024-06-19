@@ -51,7 +51,7 @@ def clean_df(df, background_df=None):
 
     # make sure categorical variables were loaded as categories 
     df['sted_2020'] = df['sted_2020'].astype('str')
-    df'burgstat_2020'] = df['burgstat_2020'].astype('str')
+    df['burgstat_2020'] = df['burgstat_2020'].astype('str')
     df['woonvorm_2020'] = df['woonvorm_2020'].astype('str')
     df['oplcat_2020'] = df['oplcat_2020'].astype('str')
 
